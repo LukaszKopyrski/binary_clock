@@ -169,7 +169,18 @@ let time=()=>{
            document.querySelector('.second__second').innerHTML='<img src="on.png"></img><img src="off.png"></img><img src="off.png"></img><img src="on.png"></img>';
        break;
     }
+
+    if(h<10){
+        h=`0${h}`;
+    }
+
+    if(m<10){
+        m=`0${m}`;
+    }
     
+    if(s<10){
+        s=`0${s}`;
+    }
     document.querySelector('.digital').innerHTML=`${h}:${m}:${s}`
 
     
